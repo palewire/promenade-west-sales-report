@@ -24,7 +24,7 @@ layout: default
         {% for row in site.data.sales %}
         {% if forloop.index < 6 %}
         <tr>
-            <td>{{ row.date|date:"%Y-%m-%d" }}</td>
+            <td><a href="{{ row.url }}">{{ row.date|date:"%Y-%m-%d" }}</a></td>
             <td class="text-right">{{ row.unit }}</td>
             <td class="text-right">${{ row.price }}</td>
             <td class="text-right">{{ row.square_feet }}</td>
