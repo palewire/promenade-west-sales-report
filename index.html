@@ -6,9 +6,9 @@ layout: default
 <header class="row-fluid">
     <h1 class="col-sm-12 display-4">{{ page.title }}</h1>
     <p class="col-sm-12">A draft by Ben Welsh • {{ site.time|date:"%B %-d, %Y"}}</p>
-    <p class="col-sm-12">There have been {{ site.data.pwest.this_year.count }} sales at Promenade West this year. The median sales price was ${{ site.data.pwest.this_year.median_price|round|intcomma }}, a {{ site.data.pwest.change.price|round }}% increase over last year.</p>
+    <p class="col-sm-12">There have been {{ site.data.pwest.this_year.count }} sales at Promenade West this year. The median sales price was ${{ site.data.pwest.this_year.median_price|round|intcomma }}, a {{ site.data.pwest.change.price|round:"1" }}% increase over last year.</p>
     <p class="col-sm-12">
-        In comparison, there have been {{ site.data.dtla.this_year.count }} sales in all of downtown this year. The median sales price across the entire area was ${{ site.data.dtla.this_year.median_price|round|intcomma }}, a {{ site.data.dtla.change.price|round }}% increase over last year.
+        In comparison, there have been {{ site.data.dtla.this_year.count }} sales in all of downtown this year. The median sales price across the entire area was ${{ site.data.dtla.this_year.median_price|round|intcomma }}, a {{ site.data.dtla.change.price|round:"1" }}% increase over last year.
     </p>
 </header>
 
@@ -60,5 +60,18 @@ layout: default
     </figure>
 </section>
 
+<section class="row-fluid">
+    <h4 class="col-sm-12">Median price per square foot by year</h4>
+    <p class="col-sm-12">The median sales price per square foot at Promenade West this year was ${{ site.data.pwest.this_year.median_price_per_sqft|round|intcomma }}, a {{ site.data.pwest.change.median_price_per_sqft|round:"1" }}% increase over last year.</p>
+    <p class="col-sm-12">
+        In comparison, the median sales price per square foot across all of downtown was ${{ site.data.dtla.this_year.median_price_per_sqft|round|intcomma }}, a {{ site.data.dtla.change.median_price_per_sqft|round:"1" }}% increase over last year.
+    </p>
+
+    <p class="col-sm-12">Promenade West in black. Downtown in gray.</p>
+    <figure>
+        <img src="assets/price-per-sqft-by-year.svg" class="img-fluid col-sm-5">
+        <img src="assets/dtla-price-per-sqft-by-year.svg" class="img-fluid col-sm-5">
+    </figure>
+</section>
 
 <section class="row-fluid"></section>
