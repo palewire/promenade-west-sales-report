@@ -1,4 +1,5 @@
 bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,unit,url,price_per_square_foot,year
+1.0,1.0,110 Wilshire,29,2018-07-05,532000.0,City West,760.0,3009,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=AR18127066MR,700.0,2018
 1.0,1.0,110 Wilshire,29,2018-05-11,530000.0,City West,800.0,1905,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-323466,662.5,2018
 2.0,2.0,110 Wilshire,29,2018-04-25,1290000.0,City West,1600.0,3002,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=17-288234,806.25,2018
 2.0,2.0,110 Wilshire,29,2018-04-16,945000.0,City West,1140.0,2311,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=SR18020616CN,828.9473684210526,2018
@@ -229,6 +230,7 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 2.0,2.0,940 E. 2nd Street,17,2011-11-29,504000.0,Arts District,1332.0,13,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=11-547299,378.3783783783784,2011
 2.0,2.0,940 E. 2nd Street,17,2011-11-23,499000.0,Arts District,1332.0,14,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=11-547291,374.62462462462463,2011
 2.0,2.0,940 E. 2nd Street,17,2011-11-22,505000.0,Arts District,1332.0,16,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=11-561761,379.1291291291291,2011
+2.0,1.0,Barker Block Lofts,18,2018-06-29,1350000.0,Arts District,1660.0,256,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-343620,813.2530120481928,2018
 2.0,1.0,Barker Block Lofts,18,2018-05-31,870000.0,Arts District,1740.0,104,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=17-280030,500.0,2018
 1.0,0.0,Barker Block Lofts,18,2018-04-16,700000.0,Arts District,1030.0,338,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=WS18011178MR,679.6116504854369,2018
 1.0,1.0,Barker Block Lofts,18,2018-04-04,730000.0,Arts District,950.0,252,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-310094,768.421052631579,2018
@@ -363,6 +365,7 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 2.0,0.0,Barker Block Lofts,18,2011-01-11,560000.0,Arts District,2293.0,118,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-495367,244.22154382904492,2011
 2.0,0.0,Barker Block Lofts,18,2011-01-06,617405.0,Arts District,1647.0,356,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-454019,374.86642380085004,2011
 2.0,0.0,Barker Block Lofts,18,2011-01-05,540000.0,Arts District,1532.0,139,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-437339,352.4804177545692,2011
+1.0,1.0,Barker Block Warehouse,20,2018-07-16,677500.0,Arts District,740.0,214,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-345834,915.5405405405405,2018
 1.0,1.0,Barker Block Warehouse,20,2018-06-22,870000.0,Arts District,1092.0,208,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-317772,796.7032967032967,2018
 1.0,1.0,Barker Block Warehouse,20,2018-03-07,900000.0,Arts District,1160.0,305,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=17-254294,775.8620689655172,2018
 1.0,1.0,Barker Block Warehouse,20,2017-12-20,705000.0,Arts District,890.0,209,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=17-275448,792.1348314606741,2017
@@ -414,6 +417,7 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 1.0,1.0,Barker Block Warehouse,20,2014-03-07,470100.0,Arts District,784.0,120,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=14-731833,599.6173469387755,2014
 1.0,0.0,Barker Block Warehouse,20,2014-03-07,596900.0,Arts District,997.0,222,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=14-731879,598.6960882647944,2014
 2.0,0.0,Barker Block Warehouse,20,2014-03-06,701516.0,Arts District,1355.0,104,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=14-731869,517.7239852398524,2014
+1.0,2.0,Bartlett,60,2018-07-11,510000.0,Jewelry District,660.0,1203,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=SR18035590CN,772.7272727272727,2018
 1.0,1.0,Bartlett,60,2018-06-14,665000.0,Jewelry District,860.0,1205,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-340654,773.2558139534884,2018
 1.0,1.0,Bartlett,60,2018-06-12,513500.0,Jewelry District,740.0,306,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-327272,693.918918918919,2018
 1.0,0.0,Bartlett,60,2018-04-20,525000.0,Jewelry District,780.0,902,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=SR18017815CN,673.0769230769231,2018
@@ -579,6 +583,7 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 1.0,1.0,Biscuit Company Lofts,22,2011-03-23,365000.0,Arts District,1090.0,406,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-432865,334.86238532110093,2011
 1.0,0.0,Biscuit Company Lofts,22,2011-03-11,365000.0,Arts District,1090.0,306,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-485819,334.86238532110093,2011
 1.0,0.0,Biscuit Company Lofts,22,2011-02-18,215000.0,Arts District,744.0,401,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=F1859754CN,288.97849462365593,2011
+1.0,0.0,Bunker Hill Tower,14,2018-07-11,435000.0,Bunker Hill,481.0,1304,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=PW18141732MR,904.3659043659044,2018
 1.0,1.0,Bunker Hill Tower,14,2018-06-14,475000.0,Bunker Hill,762.0,1702,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-324564,623.3595800524935,2018
 2.0,2.0,Bunker Hill Tower,14,2018-05-21,678000.0,Bunker Hill,1234.0,1610,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=PW18083146MR,549.4327390599676,2018
 2.0,2.0,Bunker Hill Tower,14,2018-04-30,680000.0,Bunker Hill,1234.0,1203,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-320982,551.0534846029174,2018
@@ -823,6 +828,7 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 1.0,1.0,El Dorado,38,2013-03-08,400000.0,Historic Core,730.0,908,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=13-655185,547.945205479452,2013
 2.0,1.0,El Dorado,38,2012-06-08,690000.0,Historic Core,1190.0,1205,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=I12014775MR,579.8319327731092,2012
 1.0,1.0,El Dorado,38,2012-04-25,259900.0,Historic Core,858.0,510,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=I11135977MR,302.9137529137529,2012
+1.0,1.0,Elleven Lofts,66,2018-07-16,607500.0,L.A. Live,1100.0,502,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-335328,552.2727272727273,2018
 2.0,2.0,Elleven Lofts,66,2018-05-14,1329500.0,L.A. Live,2070.0,618,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-328546,642.2705314009662,2018
 1.0,1.0,Elleven Lofts,66,2018-04-24,520000.0,L.A. Live,930.0,613,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=OC17107835MR,559.1397849462365,2018
 2.0,2.0,Elleven Lofts,66,2018-04-03,1075000.0,L.A. Live,1770.0,1210,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=TR18013018MR,607.3446327683616,2018
@@ -926,6 +932,10 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 1.0,1.0,Elleven Lofts,66,2011-03-17,255000.0,L.A. Live,970.0,612,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-467927,262.88659793814435,2011
 1.0,1.0,Elleven Lofts,66,2011-03-01,415000.0,L.A. Live,1200.0,616,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-480925,345.8333333333333,2011
 3.0,2.0,Elleven Lofts,66,2011-01-31,700000.0,L.A. Live,1950.0,Ph3,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=P764384MR,358.97435897435895,2011
+2.0,2.0,Evo,67,2018-07-18,925000.0,L.A. Live,1170.0,1910,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-335872,790.5982905982906,2018
+1.0,1.0,Evo,67,2018-07-05,500000.0,L.A. Live,760.0,911,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=17-284220,657.8947368421053,2018
+1.0,1.0,Evo,67,2018-07-03,632500.0,L.A. Live,1120.0,521,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=PW18009055MR,564.7321428571429,2018
+1.0,1.0,Evo,67,2018-07-03,645000.0,L.A. Live,860.0,1014,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-318986,750.0,2018
 1.0,1.0,Evo,67,2018-06-12,630000.0,L.A. Live,860.0,914,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-328772,732.5581395348837,2018
 2.0,1.0,Evo,67,2018-06-09,748000.0,L.A. Live,1120.0,1203,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-330102,667.8571428571429,2018
 1.0,1.0,Evo,67,2018-05-31,695000.0,L.A. Live,840.0,1808,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-328912,827.3809523809524,2018
@@ -1212,6 +1222,7 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 2.0,2.0,Grand Lofts,69,2011-06-10,389900.0,L.A. Live,1560.0,A405,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=11-520439,249.93589743589743,2011
 2.0,2.0,Grand Lofts,69,2011-05-13,325000.0,L.A. Live,1090.0,407,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=W10122939MR,298.1651376146789,2011
 2.0,2.0,Grand Lofts,69,2011-03-31,405000.0,L.A. Live,1560.0,A305,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-491127,259.61538461538464,2011
+1.0,0.0,Higgins,39,2018-07-06,1180000.0,Historic Core,1460.0,1006,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-362234,808.2191780821918,2018
 1.0,1.0,Higgins,39,2018-06-28,470000.0,Historic Core,750.0,309,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-350562,626.6666666666666,2018
 1.0,0.0,Higgins,39,2018-04-10,456000.0,Historic Core,801.0,510,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-317592,569.2883895131087,2018
 1.0,0.0,Higgins,39,2018-04-09,440000.0,Historic Core,770.0,208,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-318150,571.4285714285714,2018
@@ -1336,6 +1347,7 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 2.0,2.0,Library Court,35,2011-03-25,366117.0,Financial District,1170.0,517,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=S644946MR,312.92051282051284,2011
 1.0,1.0,Library Court,35,2011-03-04,200000.0,Financial District,700.0,215,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-479253,285.7142857142857,2011
 1.0,1.0,Library Court,35,2011-01-13,180000.0,Financial District,610.0,401,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-477415,295.08196721311475,2011
+1.0,0.0,Little Tokyo Lofts,76,2018-06-29,420000.0,Little Tokyo,700.0,632,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-323694,600.0,2018
 1.0,0.0,Little Tokyo Lofts,76,2018-06-14,412000.0,Little Tokyo,720.0,514,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-330200,572.2222222222222,2018
 1.0,1.0,Little Tokyo Lofts,76,2018-06-14,570000.0,Little Tokyo,980.0,519,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=CV18090908MR,581.6326530612245,2018
 1.0,0.0,Little Tokyo Lofts,76,2018-06-01,516000.0,Little Tokyo,890.0,523,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=CV18034971MR,579.7752808988764,2018
@@ -1467,6 +1479,7 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 1.0,0.0,Little Tokyo Lofts,76,2011-03-22,96600.0,Little Tokyo,710.0,229,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-482375,136.05633802816902,2011
 1.0,0.0,Little Tokyo Lofts,76,2011-02-07,179100.0,Little Tokyo,870.0,309,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-482823,205.86206896551724,2011
 1.0,0.0,Little Tokyo Lofts,76,2011-01-24,140000.0,Little Tokyo,870.0,409,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=C10111127MR,160.91954022988506,2011
+3.0,2.0,Luma Lofts,70,2018-07-18,1670000.0,L.A. Live,1920.0,PH205,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=SR18111300CN,869.7916666666666,2018
 1.0,1.0,Luma Lofts,70,2018-06-19,617000.0,L.A. Live,860.0,903,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=BB18051398MR,717.4418604651163,2018
 1.0,1.0,Luma Lofts,70,2018-06-01,705000.0,L.A. Live,1130.0,1209,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-332908,623.8938053097345,2018
 1.0,1.0,Luma Lofts,70,2018-04-25,645000.0,L.A. Live,880.0,1505,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-321722,732.9545454545455,2018
@@ -1618,6 +1631,8 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 1.0,1.0,Luma Lofts,70,2011-01-28,349900.0,L.A. Live,1110.0,412,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=P749496MR,315.22522522522524,2011
 1.0,1.0,Luma Lofts,70,2011-01-24,350000.0,L.A. Live,910.0,1511,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=12143416IT,384.61538461538464,2011
 1.0,1.0,Luma Lofts,70,2011-01-04,325000.0,L.A. Live,930.0,614,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-475471,349.4623655913978,2011
+2.0,2.0,Market Lofts,71,2018-07-13,799000.0,L.A. Live,1474.0,419,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-332338,542.0624151967436,2018
+1.0,1.0,Market Lofts,71,2018-07-05,730000.0,L.A. Live,1050.0,711,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-349410,695.2380952380952,2018
 2.0,2.0,Market Lofts,71,2018-06-13,800000.0,L.A. Live,1220.0,503,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-326708,655.7377049180328,2018
 2.0,2.0,Market Lofts,71,2018-06-01,839000.0,L.A. Live,1420.0,200,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-307206,590.8450704225352,2018
 1.0,1.0,Market Lofts,71,2018-04-25,580000.0,L.A. Live,988.0,238,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-306806,587.0445344129555,2018
@@ -1779,6 +1794,7 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 2.0,1.0,Metropolis Tower I,72,2017-05-17,938000.0,L.A. Live,843.0,26J,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=15-947833,1112.6927639383155,2017
 2.0,1.0,Metropolis Tower I,72,2017-04-19,865740.0,L.A. Live,1053.0,16F,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=15-877047,822.1652421652421,2017
 2.0,1.0,Metropolis Tower I,72,2017-03-31,1008000.0,L.A. Live,977.0,8I,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=15-936887,1031.7297850562948,2017
+1.0,0.0,Molino Street Lofts,50,2018-07-20,950000.0,Arts District,1490.0,212,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=818001417IT,637.5838926174497,2018
 1.0,1.0,Molino Street Lofts,50,2017-10-17,910000.0,Arts District,1495.0,111,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=17-270408,608.695652173913,2017
 1.0,1.0,Molino Street Lofts,50,2017-10-06,738000.0,Arts District,1090.0,210,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=17-253342,677.0642201834862,2017
 1.0,1.0,Molino Street Lofts,50,2017-09-26,837500.0,Arts District,1357.0,110,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=17-257526,617.1702284450995,2017
@@ -1920,6 +1936,7 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 3.0,2.0,Promenade,27,2011-01-28,410000.0,Bunker Hill,1608.0,2,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=22144151IT,254.97512437810946,2011
 1.0,1.0,Promenade,27,2011-01-07,256000.0,Bunker Hill,796.0,308,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=09-413527,321.60804020100505,2011
 2.0,2.0,Promenade,27,2011-01-04,330000.0,Bunker Hill,1226.0,424,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-454003,269.16802610114195,2011
+2.0,2.0,Promenade West,28,2018-07-03,620000.0,Bunker Hill,1323.0,308,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=318001482IT,468.63189720332576,2018
 2.0,2.0,Promenade West,28,2018-06-12,600000.0,Bunker Hill,1323.0,527,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-334730,453.51473922902494,2018
 2.0,2.0,Promenade West,28,2018-04-11,598000.0,Bunker Hill,1348.0,706,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=SR18004194CN,443.620178041543,2018
 2.0,2.0,Promenade West,28,2018-02-01,590000.0,Bunker Hill,1323.0,409,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-302636,445.9561602418745,2018
@@ -1982,6 +1999,8 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 3.0,2.0,Promenade West,28,2011-04-15,443000.0,Bunker Hill,1500.0,203,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-469183,295.3333333333333,2011
 2.0,2.0,Promenade West,28,2011-04-14,265000.0,Bunker Hill,1217.0,107,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=R1006067MR,217.74856203779785,2011
 1.0,1.0,Promenade West,28,2011-01-14,250000.0,Bunker Hill,992.0,714,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-480135,252.01612903225808,2011
+3.0,2.0,Ritz Carlton,74,2018-07-20,1765000.0,L.A. Live,1718.0,31H,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-319832,1027.3573923166473,2018
+2.0,1.0,Ritz Carlton,74,2018-07-05,1250000.0,L.A. Live,1200.0,35G,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=17-261674,1041.6666666666667,2018
 3.0,2.0,Ritz Carlton,74,2018-05-11,1825000.0,L.A. Live,1700.0,38K,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-328178,1073.5294117647059,2018
 2.0,1.0,Ritz Carlton,74,2018-03-30,1095000.0,L.A. Live,1020.0,31F,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=17-287688,1073.5294117647059,2018
 4.0,3.0,Ritz Carlton,74,2018-03-28,3350000.0,L.A. Live,2980.0,48E,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-308022,1124.1610738255033,2018
@@ -2079,6 +2098,7 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 3.0,3.0,Ritz Carlton,74,2011-09-09,5225000.0,L.A. Live,3436.0,50F,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=09-383887,1520.663562281723,2011
 1.0,1.0,Ritz Carlton,74,2011-08-18,850000.0,L.A. Live,1026.0,27D,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=11-504109,828.4600389863548,2011
 2.0,2.0,Ritz Carlton,74,2011-05-20,1966300.0,L.A. Live,1925.0,48B,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=09-372883,1021.4545454545455,2011
+1.0,0.0,Santee Village: Cornell,31,2018-07-13,495000.0,Fashion District,650.0,708,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=SR18128103CN,761.5384615384615,2018
 1.0,1.0,Santee Village: Cornell,31,2018-03-27,585000.0,Fashion District,750.0,810,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-313834,780.0,2018
 1.0,0.0,Santee Village: Cornell,31,2017-11-18,499000.0,Fashion District,650.0,1107,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=17-277828,767.6923076923077,2017
 1.0,1.0,Santee Village: Cornell,31,2017-08-18,462500.0,Fashion District,650.0,907,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=17-237996,711.5384615384615,2017
@@ -2335,6 +2355,7 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 1.0,1.0,Savoy,24,2011-01-31,265000.0,Arts District,910.0,255,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=09-412717,291.2087912087912,2011
 1.0,1.0,Savoy,24,2011-01-26,281000.0,Arts District,870.0,427,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-482969,322.98850574712645,2011
 1.0,2.0,Savoy,24,2011-01-07,285000.0,Arts District,908.0,275,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=P718302MR,313.87665198237886,2011
+1.0,1.0,Shy Barry Grand,59,2018-07-02,455000.0,Historic Core,670.0,1022,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-342022,679.1044776119403,2018
 1.0,1.0,Shy Barry Grand,59,2018-05-14,385000.0,Historic Core,860.0,307,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-328914,447.6744186046512,2018
 1.0,1.0,Shy Barry Grand,59,2018-04-16,349000.0,Historic Core,500.0,1121,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-307050,698.0,2018
 1.0,1.0,Shy Barry Grand,59,2018-04-11,498000.0,Historic Core,800.0,906,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-303168,622.5,2018
@@ -2621,6 +2642,7 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 2.0,2.0,Skyline,75,2011-03-08,390000.0,L.A. Live,1193.0,614,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-470953,326.9069572506287,2011
 2.0,2.0,Skyline,75,2011-02-28,400000.0,L.A. Live,1193.0,606,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=I10075788MR,335.28918692372173,2011
 2.0,2.0,Skyline,75,2011-01-04,445000.0,L.A. Live,1264.0,816,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-481067,352.05696202531647,2011
+2.0,2.0,Ten50,85,2018-07-11,1365500.0,L.A. Live,1353.0,1710,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-322210,1009.2387287509239,2018
 1.0,2.0,Ten50,85,2018-05-15,805000.0,L.A. Live,900.0,1507,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=TR18041720MR,894.4444444444445,2018
 1.0,1.0,Ten50,85,2018-03-29,929000.0,L.A. Live,929.0,1708,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-306904,1000.0,2018
 2.0,2.0,Ten50,85,2018-03-16,1639000.0,L.A. Live,1356.0,2001,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=17-264150,1208.7020648967552,2018
@@ -2730,6 +2752,8 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 1.0,1.0,Teramachi,80,2011-10-14,229900.0,Little Tokyo,690.0,103,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=F11062997CN,333.18840579710144,2011
 1.0,1.0,Teramachi,80,2011-09-29,265000.0,Little Tokyo,690.0,517,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=11-533807,384.05797101449275,2011
 2.0,2.0,Teramachi,80,2011-04-01,335000.0,Little Tokyo,1190.0,309,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-487585,281.5126050420168,2011
+1.0,1.0,Textile Building,32,2018-07-14,517000.0,Fashion District,670.0,505,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-349984,771.6417910447761,2018
+1.0,0.0,Textile Building,32,2018-07-12,555000.0,Fashion District,890.0,206,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-348806,623.5955056179776,2018
 2.0,2.0,Textile Building,32,2017-08-28,1040700.0,Fashion District,1400.0,1201,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=17-248630,743.3571428571429,2017
 1.0,1.0,Textile Building,32,2017-05-24,433000.0,Fashion District,670.0,205,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=TR17062457MR,646.2686567164179,2017
 1.0,0.0,Textile Building,32,2017-05-11,466000.0,Fashion District,890.0,606,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=SR17072562CN,523.5955056179776,2017
@@ -2779,6 +2803,8 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 1.0,1.0,Textile Building,32,2011-02-22,169000.0,Fashion District,660.0,1003,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-470729,256.06060606060606,2011
 1.0,1.0,Textile Building,32,2011-02-17,181500.0,Fashion District,890.0,706,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-451945,203.93258426966293,2011
 2.0,2.0,Textile Building,32,2011-01-31,429000.0,Fashion District,1370.0,1101,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-442679,313.13868613138686,2011
+1.0,1.0,The Rowan,57,2018-07-20,675000.0,Historic Core,850.0,218,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-353426,794.1176470588235,2018
+2.0,1.0,The Rowan,57,2018-07-16,710000.0,Historic Core,998.0,812,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-336652,711.4228456913828,2018
 2.0,2.0,The Rowan,57,2018-06-05,949000.0,Historic Core,1260.0,1105,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-340908,753.1746031746031,2018
 1.0,0.0,The Rowan,57,2018-05-30,460000.0,Historic Core,510.0,609,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=BB18081282MR,901.9607843137255,2018
 1.0,1.0,The Rowan,57,2018-03-20,725000.0,Historic Core,720.0,201,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-302592,1006.9444444444445,2018
@@ -2874,6 +2900,8 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 2.0,2.0,The Rowan,57,2011-04-01,570000.0,Historic Core,1081.0,PH04,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=11-503793,527.2895467160037,2011
 2.0,2.0,The Rowan,57,2011-02-26,395000.0,Historic Core,998.0,712,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-488329,395.79158316633266,2011
 1.0,1.0,The Rowan,57,2011-02-04,215000.0,Historic Core,591.0,808,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=10-485083,363.7901861252115,2011
+2.0,2.0,Tokyo Villa,128,2018-07-12,682500.0,Little Tokyo,1221.0,300,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=DW18113419MR,558.9680589680589,2018
+1.0,1.0,Tokyo Villa,128,2018-06-25,450000.0,Little Tokyo,850.0,316,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=MB18100604MR,529.4117647058823,2018
 2.0,2.0,Tokyo Villa,128,2018-05-08,615300.0,Little Tokyo,1067.0,212,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-320992,576.6635426429241,2018
 1.0,1.0,Tokyo Villa,128,2018-05-07,400000.0,Little Tokyo,579.0,131,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=OC18009671MR,690.846286701209,2018
 1.0,1.0,Tokyo Villa,128,2018-05-07,465000.0,Little Tokyo,848.0,240,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=IG18039020MR,548.3490566037735,2018
@@ -2917,6 +2945,7 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 1.0,1.0,Tokyo Villa,128,2011-01-28,237000.0,Little Tokyo,863.0,329,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=B2106416MR,274.6234067207416,2011
 1.0,1.0,Tomahawk Lofts,33,2016-05-16,995000.0,Fashion District,1789.0,6,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=16-977571,556.1766349916154,2016
 1.0,1.0,Tomahawk Lofts,33,2012-06-15,390000.0,Fashion District,1820.0,3,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=11-500845,214.28571428571428,2012
+2.0,1.0,Toy Factory,25,2018-07-12,1699000.0,Arts District,2360.0,309,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-341826,719.9152542372881,2018
 1.0,1.0,Toy Factory,25,2018-06-14,1095000.0,Arts District,1475.0,716,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-344198,742.3728813559322,2018
 2.0,2.0,Toy Factory,25,2018-06-05,2390000.0,Arts District,3218.0,712,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-327054,742.697327532629,2018
 1.0,1.0,Toy Factory,25,2018-06-01,1200000.0,Arts District,1464.0,418,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=17-287104,819.672131147541,2018
@@ -2998,6 +3027,9 @@ bathrooms,bedrooms,building_name,building_number,date,price,region,square_feet,u
 1.0,0.0,Toy Warehouse,26,2013-04-22,425000.0,Arts District,1217.0,4,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=PW13052617MR,349.2193919474117,2013
 1.0,1.0,Toy Warehouse,26,2013-03-12,490000.0,Arts District,1778.0,6,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=P844124MR,275.59055118110234,2013
 1.0,0.0,Toy Warehouse,26,2011-03-03,400000.0,Arts District,1782.0,13,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=11-497857,224.4668911335578,2011
+2.0,2.0,Vero,30,2018-07-12,640000.0,City West,1140.0,203,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-356084,561.4035087719299,2018
+2.0,2.0,Vero,30,2018-07-10,625000.0,City West,990.0,132,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-351672,631.3131313131313,2018
+2.0,2.0,Vero,30,2018-07-03,640000.0,City West,1140.0,306,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-345276,561.4035087719299,2018
 1.0,1.0,Vero,30,2018-06-05,520000.0,City West,920.0,434,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-341700,565.2173913043479,2018
 1.0,1.0,Vero,30,2018-05-14,495000.0,City West,700.0,315,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-317278,707.1428571428571,2018
 2.0,2.0,Vero,30,2018-05-01,635000.0,City West,1140.0,402,https://www.dlxco.com/the-promenade-west-lofts-condos-for-sale-lease-downtown-losangeles?mlsno=18-321102,557.0175438596491,2018
