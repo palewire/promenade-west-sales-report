@@ -75,6 +75,34 @@ layout: default
 </section>
 
 <section class="row-fluid">
+    <h4 class="col-sm-12">Bunker Hill price comparisons</h4>
+    <table class="col-sm-7 table table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th class="text-right">Unit</th>
+                <th class="text-right">Price</th>
+                <th class="text-right">Sqft.</th>
+                <th class="text-right">Per sqft.</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for row in site.data.pwest_sales %}
+        {% if forloop.index < 6 %}
+        <tr>
+            <td><a href="{{ row.url }}">{{ row.date|date:"%Y-%m-%d" }}</a></td>
+            <td class="text-right">{{ row.unit }}</td>
+            <td class="text-right">${{ row.price }}</td>
+            <td class="text-right">{{ row.square_feet }}</td>
+            <td class="text-right">${{ row.price_per_square_foot|round:0 }}</td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+    </tbody>
+    </table>
+</section>
+
+<section class="row-fluid">
     <h4 class="col-sm-12">Buildings with the largest units</h4>
     <p class="col-sm-12">
        Units sold in Promenade West are among the largest downtown. The median size of all sales is {{ site.data.pwest.all_time.median_sqft|round|intcomma }} square feet.
