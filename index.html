@@ -75,28 +75,59 @@ layout: default
 </section>
 
 <section class="row-fluid">
-    <h4 class="col-sm-12">Bunker Hill price comparisons</h4>
+    <h4 class="col-sm-12">Bunker Hill comparisons</h4>
     <table class="col-sm-7 table table-bordered table-condensed">
         <thead>
             <tr>
-                <th>Date</th>
-                <th class="text-right">Unit</th>
-                <th class="text-right">Price</th>
-                <th class="text-right">Sqft.</th>
-                <th class="text-right">Per sqft.</th>
+                <th colspan=6>Prices</th>
+            </tr>
+            <tr>
+                <th width=20%>Building</th>
+                <th class="text-right">2014</th>
+                <th class="text-right">2015</th>
+                <th class="text-right">2016</th>
+                <th class="text-right">2017</th>
+                <th class="text-right">2018</th>
             </tr>
         </thead>
         <tbody>
-        {% for row in site.data.pwest_sales %}
-        {% if forloop.index < 6 %}
+        {% for row in site.data.bunker_hill_prices %}
         <tr>
-            <td><a href="{{ row.url }}">{{ row.date|date:"%Y-%m-%d" }}</a></td>
-            <td class="text-right">{{ row.unit }}</td>
-            <td class="text-right">${{ row.price }}</td>
-            <td class="text-right">{{ row.square_feet }}</td>
-            <td class="text-right">${{ row.price_per_square_foot|round:0 }}</td>
+            <td width=20%>{{ row.building_name }}</td>
+            <td class="text-right">${{ row.2014|round:0 }}</td>
+            <td class="text-right">${{ row.2015|round:0 }}</td>
+            <td class="text-right">${{ row.2016|round:0 }}</td>
+            <td class="text-right">${{ row.2017|round:0 }}</td>
+            <td class="text-right">${{ row.2018|round:0 }}</td>
         </tr>
-        {% endif %}
+        {% endfor %}
+    </tbody>
+    </table>
+
+    <table class="col-sm-7 table table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th colspan=6>Price per square foot</th>
+            </tr>
+            <tr>
+                <th width=20%>Building</th>
+                <th class="text-right">2014</th>
+                <th class="text-right">2015</th>
+                <th class="text-right">2016</th>
+                <th class="text-right">2017</th>
+                <th class="text-right">2018</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for row in site.data.bunker_hill_price_per_sqft %}
+        <tr>
+            <td width=20%>{{ row.building_name }}</td>
+            <td class="text-right">${{ row.2014|round:0 }}</td>
+            <td class="text-right">${{ row.2015|round:0 }}</td>
+            <td class="text-right">${{ row.2016|round:0 }}</td>
+            <td class="text-right">${{ row.2017|round:0 }}</td>
+            <td class="text-right">${{ row.2018|round:0 }}</td>
+        </tr>
         {% endfor %}
     </tbody>
     </table>
