@@ -1,19 +1,19 @@
 {
     "this_year": {
-        "count": 280, 
-        "median_price": 675000.0, 
-        "median_price_per_sqft": 679.3580640486884
-    }, 
+        "count": 317,
+        "median_price": 675000.0,
+        "median_price_per_sqft": 679.1044776119402
+    },
     "last_year": {
-        "count": 441, 
-        "median_price": 633000.0, 
+        "count": 441,
+        "median_price": 633000.0,
         "median_price_per_sqft": 668.4782608695652
-    }, 
-    "change": {
-        "price": 6.6350710900473935, 
-        "median_price_per_sqft": 1.6275477926493243
-    }, 
+    },
     "all_time": {
         "median_sqft": 1020.0
+    },
+    "change": {
+        "price": 6.6350710900473935,
+        "median_price_per_sqft": 1.5896129110544621
     }
 }
