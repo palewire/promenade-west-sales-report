@@ -1,6 +1,6 @@
 {
     "this_year": {
-        "count": 347, 
+        "count": 367, 
         "median_price": 675000.0, 
         "median_price_per_sqft": 681.25
     }, 
@@ -14,6 +14,6 @@
         "median_price_per_sqft": 1.9105691056910523
     }, 
     "all_time": {
-        "median_sqft": 1020.5
+        "median_sqft": 1020.0
     }
 }
