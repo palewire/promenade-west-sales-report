@@ -6,14 +6,14 @@ layout: default
 <header class="row-fluid">
     <h1 class="col-sm-12 display-4">{{ page.title }}</h1>
     <p class="col-sm-12">Updated {{ site.time|date:"%B %-d, %Y"}}</p>
-    <p class="col-sm-12">There have been {{ site.data.pwest.this_year.count }} sales at Promenade West this year. The median sales price was ${{ site.data.pwest.this_year.median_price|round|intcomma }}, a {{ site.data.pwest.change.price|round:"1" }}% increase over last year.</p>
+    <p class="col-sm-12">There have been {{ site.data.pwest.this_year.count }} sales at Promenade West this year. The median sales price was ${{ site.data.pwest.this_year.median_price|round|intcomma }}, a {{ site.data.pwest.change.price|round:"1" }}% increase over last year. The median price per square foot comes out to ${{ site.data.pwest.this_year.median_price_per_sqft|round:0 }}.</p>
     <p class="col-sm-12">
-        In comparison, there have been {{ site.data.dtla.this_year.count }} sales in all of downtown this year. The median sales price across the entire area was ${{ site.data.dtla.this_year.median_price|round|intcomma }}, a {{ site.data.dtla.change.price|round:"1" }}% increase over last year.
+        In comparison, there have been {{ site.data.dtla.this_year.count }} sales in all of downtown this year. The median sales price across the entire area was ${{ site.data.dtla.this_year.median_price|round|intcomma }}, a {{ site.data.dtla.change.price|round:"1" }}% increase over last year. The median price per square foot was ${{ site.data.dtla.this_year.median_price_per_sqft|round:0 }}.
     </p>
 </header>
 
 <section class="row-fluid">
-    <h4 class="col-sm-12">Recent sales at Promenade West</h4>
+    <h4 class="col-sm-12">Sales this year at Promenade West</h4>
     <table class="col-sm-7 table table-bordered table-condensed">
         <thead>
             <tr>
@@ -26,12 +26,12 @@ layout: default
         </thead>
         <tbody>
         {% for row in site.data.pwest_sales %}
-        {% if forloop.index < 6 %}
+        {% if forloop.index <= site.data.pwest.this_year.count %}
         <tr>
             <td><a href="{{ row.url }}">{{ row.date|date:"%Y-%m-%d" }}</a></td>
             <td class="text-right">{{ row.unit }}</td>
-            <td class="text-right">${{ row.price }}</td>
-            <td class="text-right">{{ row.square_feet }}</td>
+            <td class="text-right">${{ row.price|round:0 }}</td>
+            <td class="text-right">{{ row.square_feet|round:0 }}</td>
             <td class="text-right">${{ row.price_per_square_foot|round:0 }}</td>
         </tr>
         {% endif %}
