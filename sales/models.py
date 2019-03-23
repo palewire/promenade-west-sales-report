@@ -18,6 +18,10 @@ class Sale(models.Model):
     price = models.FloatField()
     date = models.DateField()
 
+    # About our scrape
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+
     class Meta:
         ordering = ("-date", "-price")
 
