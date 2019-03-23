@@ -4,11 +4,14 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+Django = "*"
+psycopg2 = "*"
+pytz = "*"
+
+[dev-packages]
 jupyterlab = "*"
 pandas = "*"
 altair = "*"
-
-[dev-packages]
 
 [requires]
 python_version = "3.6"
