@@ -10,6 +10,10 @@ pytz = "*"
 whitenoise = "*"
 dj-database-url = "*"
 gunicorn = "*"
+bs4 = "*"
+python-dateutil = "*"
+requests = "*"
+html5lib = "*"
 
 [dev-packages]
 jupyterlab = "*"

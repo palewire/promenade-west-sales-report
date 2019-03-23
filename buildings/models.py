@@ -22,3 +22,7 @@ class Building(models.Model):
 
     def __str__(self):
         return self.name
+
+    @property
+    def raw_data_url(self):
+        return f'https://www.dlxco.com/property/getproperty/name/R-Listing/value/240/building/{self.id}'

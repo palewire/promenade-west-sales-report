@@ -22,7 +22,21 @@ class Sale(models.Model):
         ordering = ("-date", "-price")
 
     def __str__(self):
-        return f"{self.building} {self.unit}: ${self.price} on {self.date}"
+        return f"{self.building} {self.unit}: {self.pretty_price} on {self.date}"
+
+    def pretty_price(self):
+        return f"${self.price:,.0f}"
+    pretty_price.short_description = "price"
+    pretty_price.admin_order_field = "price"
+
+    def pretty_square_feet(self):
+        return f"{self.square_feet:,.0f}"
+    pretty_square_feet.short_description = "square feet"
+    pretty_square_feet.admin_order_field = "square_feet"
 
     def price_per_sqft(self):
         return self.price / self.square_feet
+
+    def pretty_price_per_sqft(self):
+        return f"${self.price / self.square_feet:,.0f}"
+    # pretty_price_per_sqft.short_description = "price per square foot"
