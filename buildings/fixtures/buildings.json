@@ -1,0 +1,426 @@
+[
+    {
+        "model": "buildings.Building",
+        "pk": 28,
+        "fields": {
+            "name": "Promenade West",
+            "region": "Bunker Hill"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 27,
+        "fields": {
+            "name": "Promenade",
+            "region": "Bunker Hill"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 14,
+        "fields": {
+            "name": "Bunker Hill Tower",
+            "region": "Bunker Hill"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 36,
+        "fields": {
+            "name": "Douglas",
+            "region": "Historic Core"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 38,
+        "fields": {
+            "name": "El Dorado",
+            "region": "Historic Core"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 39,
+        "fields": {
+            "name": "Higgins",
+            "region": "Historic Core"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 47,
+        "fields": {
+            "name": "Pan American",
+            "region": "Historic Core"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 59,
+        "fields": {
+            "name": "Shy Barry Grand",
+            "region": "Historic Core"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 57,
+        "fields": {
+            "name": "The Rowan",
+            "region": "Historic Core"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 34,
+        "fields": {
+            "name": "655 Hope",
+            "region": "Financial District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 35,
+        "fields": {
+            "name": "Library Court",
+            "region": "Financial District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 87,
+        "fields": {
+            "name": "Roosevelt",
+            "region": "Financial District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 29,
+        "fields": {
+            "name": "110 Wilshire",
+            "region": "City West"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 30,
+        "fields": {
+            "name": "Vero",
+            "region": "City West"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 60,
+        "fields": {
+            "name": "Bartlett",
+            "region": "Jewelry District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 62,
+        "fields": {
+            "name": "Brockman",
+            "region": "Jewelry District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 76,
+        "fields": {
+            "name": "Little Tokyo Lofts",
+            "region": "Little Tokyo"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 80,
+        "fields": {
+            "name": "Teramachi",
+            "region": "Little Tokyo"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 128,
+        "fields": {
+            "name": "Tokyo Villa",
+            "region": "Little Tokyo"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 17,
+        "fields": {
+            "name": "940 E. 2nd Street",
+            "region": "Arts District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 20,
+        "fields": {
+            "name": "Barker Block Warehouse",
+            "region": "Arts District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 18,
+        "fields": {
+            "name": "Barker Block Lofts",
+            "region": "Arts District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 21,
+        "fields": {
+            "name": "Beacon Lofts",
+            "region": "Arts District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 22,
+        "fields": {
+            "name": "Biscuit Company Lofts",
+            "region": "Arts District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 63,
+        "fields": {
+            "name": "Gallery Lofts",
+            "region": "Arts District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 50,
+        "fields": {
+            "name": "Molino Street Lofts",
+            "region": "Arts District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 127,
+        "fields": {
+            "name": "Mura",
+            "region": "Arts District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 24,
+        "fields": {
+            "name": "Savoy",
+            "region": "Arts District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 25,
+        "fields": {
+            "name": "Toy Factory",
+            "region": "Arts District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 26,
+        "fields": {
+            "name": "Toy Warehouse",
+            "region": "Arts District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 31,
+        "fields": {
+            "name": "Santee Village: Cornell",
+            "region": "Fashion District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 64,
+        "fields": {
+            "name": "Santee Village: Eckardt",
+            "region": "Fashion District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 32,
+        "fields": {
+            "name": "Textile Building",
+            "region": "Fashion District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 33,
+        "fields": {
+            "name": "Tomahawk Lofts",
+            "region": "Fashion District"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 92,
+        "fields": {
+            "name": "Atelier",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 94,
+        "fields": {
+            "name": "Circa",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 65,
+        "fields": {
+            "name": "Concerto Lofts",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 37,
+        "fields": {
+            "name": "Eastern Columbia",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 66,
+        "fields": {
+            "name": "Elleven Lofts",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 67,
+        "fields": {
+            "name": "Evo",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 68,
+        "fields": {
+            "name": "Flower Street Lofts",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 69,
+        "fields": {
+            "name": "Grand Lofts",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 82,
+        "fields": {
+            "name": "Level",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 70,
+        "fields": {
+            "name": "Luma Lofts",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 71,
+        "fields": {
+            "name": "Market Lofts",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 72,
+        "fields": {
+            "name": "Metropolis Tower I",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 83,
+        "fields": {
+            "name": "Metropolis Tower II",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 93,
+        "fields": {
+            "name": "Park Hyatt",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 74,
+        "fields": {
+            "name": "Ritz Carlton",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 73,
+        "fields": {
+            "name": "Sky Lofts",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 85,
+        "fields": {
+            "name": "Ten50",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 75,
+        "fields": {
+            "name": "Skyline",
+            "region": "L.A. Live"
+        }
+    },
+    {
+        "model": "buildings.Building",
+        "pk": 81,
+        "fields": {
+            "name": "WaterMarke",
+            "region": "L.A. Live"
+        }
+    }
+]
