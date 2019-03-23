@@ -9,6 +9,7 @@ psycopg2 = "*"
 pytz = "*"
 whitenoise = "*"
 dj-database-url = "*"
+gunicorn = "*"
 
 [dev-packages]
 jupyterlab = "*"
