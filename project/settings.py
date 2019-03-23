@@ -122,5 +122,5 @@ except ImportError:
     DEBUG = False
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
     ALLOWED_HOSTS = [
-        'everytractcount.herokuapp.com',
+        'promenade-west-sales-report.herokuapp.com',
     ]
