@@ -26,7 +26,7 @@ class Sale(models.Model):
         ordering = ("-date", "-price")
 
     def __str__(self):
-        return f"{self.building} {self.unit}: {self.pretty_price} on {self.date}"
+        return f"{self.building.name} {self.unit}: {self.pretty_price} on {self.date}"
 
     def pretty_price(self):
         return f"${self.price:,.0f}"
