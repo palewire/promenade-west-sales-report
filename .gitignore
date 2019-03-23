@@ -1,4 +1,6 @@
+*.sqlite3
 altair-*.json
 _site
 .ipynb_checkpoints
 *.pyc
+project/secrets.py
