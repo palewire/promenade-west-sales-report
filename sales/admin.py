@@ -10,7 +10,8 @@ class SaleAdmin(admin.ModelAdmin):
         "date",
         "pretty_price",
         "pretty_square_feet",
-        "pretty_price_per_sqft"
+        "pretty_price_per_sqft",
+        "created",
     )
     date_hierarchy = "date"
     list_filter = ("building__region", "building")
