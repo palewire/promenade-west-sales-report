@@ -77,13 +77,13 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>The year before</td>
+                    <td>{{ two_years_ago|date:"N 'y" }} &ndash; {{ one_year_ago|date:"N 'y" }}</td>
                     <td class="text-right">{{ the_year_before_pwest.count }}</td>
                     <td class="text-right">${{ the_year_before_pwest.median_price|floatformat:0|intcomma }}</td>
                     <td class="text-right">${{ the_year_before_pwest.median_price_per_sqft|floatformat:0|intcomma }}</td>
                 </tr>
                 <tr>
-                    <td>This past year</td>
+                    <td>{{ one_year_ago|date:"N 'y" }} &ndash; {{ today|date:"N 'y" }}</td>
                     <td class="text-right">{{ the_last_year_pwest.count }}</td>
                     <td class="text-right">${{ the_last_year_pwest.median_price|floatformat:0|intcomma }}</td>
                     <td class="text-right">${{ the_last_year_pwest.median_price_per_sqft|floatformat:0|intcomma }}</td>

@@ -1,3 +1,4 @@
+from datetime import timedelta
 from django.conf import settings
 from django.utils import timezone
 from django.db.models import Count
@@ -31,6 +32,10 @@ class IndexView(TemplateView):
 
         listings_pwest = Listing.objects.all().order_by("-price")
 
+        today = timezone.now().date()
+        one_year_ago = today - timedelta(days=365)
+        two_years_ago = one_year_ago - timedelta(days=365)
+
         return {
             'the_last_year': the_last_year,
             'the_last_year_pwest': the_last_year_pwest,
@@ -40,4 +45,7 @@ class IndexView(TemplateView):
             "everything_pwest": everything_pwest,
             "everything_pwest_by_year": everything_pwest_by_year,
             "listings_pwest": listings_pwest,
+            "today": today,
+            "one_year_ago": one_year_ago,
+            "two_years_ago": two_years_ago,
         }
