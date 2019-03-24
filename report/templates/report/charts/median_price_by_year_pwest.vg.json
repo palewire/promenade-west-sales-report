@@ -28,14 +28,14 @@
         "align": "center",
         "baseline": "middle",
         "dy": -9,
-        "size": 13
+        "size": 16
       },
       "encoding": {
         "text": {
           "type": "quantitative",
           "aggregate": "median",
           "field": "price",
-          "format": "$,.0f"
+          "format": "$.3s"
         },
         "x": {
           "type": "ordinal",
