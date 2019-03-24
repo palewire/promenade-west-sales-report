@@ -1,10 +1,13 @@
-from sales.models import Sale
 from django.conf import settings
 from django.utils import timezone
 from django.db.models import Count
 from django.shortcuts import render
 from django.views.generic import TemplateView
 from django.db.models.functions import TruncYear
+
+# Models
+from sales.models import Sale
+from listings.models import Listing
 
 
 class IndexView(TemplateView):
@@ -26,6 +29,8 @@ class IndexView(TemplateView):
             date__year__lt=timezone.now().year
         ).values('year').annotate(count=Count("*")).order_by("year")
 
+        listings_pwest = Listing.objects.all().order_by("-price")
+
         return {
             'the_last_year': the_last_year,
             'the_last_year_pwest': the_last_year_pwest,
@@ -34,4 +39,5 @@ class IndexView(TemplateView):
             "everything": everything,
             "everything_pwest": everything_pwest,
             "everything_pwest_by_year": everything_pwest_by_year,
+            "listings_pwest": listings_pwest,
         }

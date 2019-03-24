@@ -1,0 +1,26 @@
+{% load humanize %}
+
+<div class="col-sm-9">
+    <table class="table table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th></ht>
+                <th>Unit</th>
+                <th class="text-right">Price</th>
+                <th class="text-right">Sqft.</th>
+                <th class="text-right">Per sqft.</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for row in listings_list %}
+        <tr>
+            <td>{{ forloop.counter }}.</td>
+            <td><a href="{{ row.url }}" target="_blank">{% if row.unit %}{{ row.unit }}{% else %}Unspecified{% endif %}</a></td>
+            <td class="text-right">{% if forloop.first %}${% endif %}{{ row.price|floatformat:0|intcomma }}</td>
+            <td class="text-right">{{ row.square_feet|floatformat:0 }}</td>
+            <td class="text-right">{% if forloop.first %}${% endif %}{{ row.price_per_sqft|floatformat:0 }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+</div>

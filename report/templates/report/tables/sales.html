@@ -16,8 +16,8 @@
         {% for row in sales_list %}
         <tr>
             <td>{{ forloop.counter }}.</td>
-            <td><a href="{{ row.url }}" target="_blank">{{ row.date|date:"Y-m-d" }}</a></td>
-            <td class="text-right">{{ row.unit }}</td>
+            <td>{{ row.date|date:"Y-m-d" }}</td>
+            <td class="text-right"><a href="{{ row.url }}" target="_blank">{{ row.unit }}</a></td>
             <td class="text-right">{% if forloop.first %}${% endif %}{{ row.price|floatformat:0|intcomma }}</td>
             <td class="text-right">{{ row.square_feet|floatformat:0 }}</td>
             <td class="text-right">{% if forloop.first %}${% endif %}{{ row.price_per_sqft|floatformat:0 }}</td>

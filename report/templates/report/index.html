@@ -24,7 +24,7 @@
 {% block content %}
 {% now as now %}
 <header class="row">
-    <h1 class="col-sm-12">Promenade West Sales Report</h1>
+    <h1 class="col-sm-12">Promenade West sales report</h1>
     <p class="dateline col-sm-12">Updated {{ now|date:"N j, Y"}}</p>
 </header>
 
@@ -33,18 +33,35 @@
 
     <h3 class="col-sm-12">Recent sales</h3>
 
-    <p class="col-sm-9 lead">There have been <em>{{ the_last_year_pwest.count }}</em> sales at Promenade West in the last 12 months. The median sales price was <em>${{ the_last_year_pwest.median_price|floatformat|intcomma }}</em>.</p>
+    <p class="col-sm-9 lead">There have been <em>{{ the_last_year_pwest.count }}</em> sales at Promenade West in the last 12 months. The median sales price was <em>${{ the_last_year_pwest.median_price|floatformat|intcomma }}</em> per unit and <em>${{ the_last_year_pwest.median_price_per_sqft|floatformat:0 }}</em> per square foot.</p>
 
     {% with the_last_year_pwest as sales_list %}
-        {% include "report/sales_table.html" %}
+        {% include "report/tables/sales.html" %}
     {% endwith %}
+</section>
+
+<section class="row">
+    <h3 class="col-sm-12">Current listings</h3>
+
+    <p class="col-sm-9 lead">
+        There are now <em>{{ listings_pwest.count }}</em> units in the building up for sale. The median asking price is <em>${{ listings_pwest.median_price|floatformat|intcomma }}</em> per unit and <em>${{ listings_pwest.median_price_per_sqft|floatformat:0 }}</em> per square foot.
+    </p>
+
+    {% with listings_pwest as listings_list %}
+        {% include "report/tables/listings.html" %}
+    {% endwith %}
+</section>
+
+
+<section class="row">
+    <h4 class="col-sm-12">Last year</h4>
 
     <p class="col-sm-9 lead">
         That's a <em>{{ median_price_annual_change_pwest|floatformat:1 }}% increase</em> in sales prices over the previous 12 months, when the median sales price for <em>{{ the_year_before_pwest.count }}</em> sales was <em>${{ the_year_before_pwest.median_price|floatformat|intcomma }}</em>.
     </p>
 
     {% with the_year_before_pwest as sales_list %}
-        {% include "report/sales_table.html" %}
+        {% include "report/tables/sales.html" %}
     {% endwith %}
 </section>
 
@@ -62,7 +79,7 @@
     </script>
 
     <p class="lead col-sm-9">
-        Prices leapt up in 2014, and have gradually climbed since.
+        Prices leapt in 2014 and have gradually climbed since.
     </p>
     <div id="median-price-by-year-pwest"></div>
     <script>

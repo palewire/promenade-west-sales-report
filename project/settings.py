@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'buildings',
     'sales',
+    'listings',
     'report',
 ]
 

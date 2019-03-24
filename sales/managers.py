@@ -1,3 +1,4 @@
+import statistics
 from django.db import models
 from django.utils import timezone
 from datetime import timedelta
@@ -22,31 +23,20 @@ class SaleQuerySet(models.QuerySet):
         two_years_ago = one_year_ago - timedelta(days=365)
         return self.filter(date__lt=one_year_ago).filter(date__gte=two_years_ago)
 
-    def _median(self, count, values):
-        """
-        Returns the median of the provided data.
-        """
-        if count % 2 == 1:
-            return values[int(round(count/2))]
-        else:
-            return sum(values[int(count/2-1):int(count/2+1)])/2.0
-
     def median_price(self):
         """
         The median sales price.
         """
-        count = self.count()
         values = self.values_list("price", flat=True).order_by("price")
-        return self._median(count, values)
+        return statistics.median(values)
 
     def median_price_per_sqft(self):
         """
         The median sales price divided into the size of the unit.
         """
-        count = self.count()
         inputs = self.values_list("price", "square_feet", named=True)
         values = sorted([t.price / t.square_feet for t in inputs])
-        return self._median(count, values)
+        return statistics.median(values)
 
 
 class SaleManager(models.Manager):
