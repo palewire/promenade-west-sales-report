@@ -21,9 +21,13 @@ class IndexView(TemplateView):
 
         the_last_year = Sale.objects.select_related("building").the_last_year()
         the_last_year_pwest = the_last_year.filter(building__name='Promenade West')
+        the_last_year_prom = the_last_year.filter(building__name='Promenade')
+        the_last_year_bhill = the_last_year.filter(building__name='Bunker Hill Tower')
 
         the_year_before = Sale.objects.select_related("building").the_year_before()
         the_year_before_pwest = the_year_before.filter(building__name='Promenade West')
+        the_year_before_prom = the_year_before.filter(building__name='Promenade')
+        the_year_before_bhill = the_year_before.filter(building__name='Bunker Hill Tower')
 
         everything_pwest_by_year = everything_pwest.annotate(
             year=TruncYear("date")
@@ -32,7 +36,6 @@ class IndexView(TemplateView):
         ).values('year').annotate(count=Count("*")).order_by("year")
 
         pendings_pwest = Pending.objects.all().order_by("-price")
-
         listings_pwest = Listing.objects.all().order_by("-price")
 
         today = timezone.now().date()
@@ -42,8 +45,12 @@ class IndexView(TemplateView):
         return {
             'the_last_year': the_last_year,
             'the_last_year_pwest': the_last_year_pwest,
+            'the_last_year_prom': the_last_year_prom,
+            'the_last_year_bhill': the_last_year_bhill,
             'the_year_before': the_year_before,
             'the_year_before_pwest': the_year_before_pwest,
+            "the_year_before_prom": the_year_before_prom,
+            "the_year_before_bhill": the_year_before_bhill,
             "everything": everything,
             "everything_pwest": everything_pwest,
             "everything_pwest_by_year": everything_pwest_by_year,

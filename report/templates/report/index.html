@@ -144,6 +144,69 @@
     </script>
 </section>
 
+<section class="row">
+    <h3 class="col-sm-12">Bunker Hill comparisons</h3>
+    <p class="lead col-sm-9">
+        Here's how our most recent year compares to nerby buildings:
+    </p>
+    {% percent_change the_year_before_prom.median_price the_last_year_prom.median_price as median_price_annual_change_prom %}
+    {% percent_change the_year_before_prom.median_price_per_sqft the_last_year_prom.median_price_per_sqft as median_price_per_sqft_annual_change_prom %}
+    {% percent_change the_year_before_bhill.median_price the_last_year_bhill.median_price as median_price_annual_change_bhill %}
+    {% percent_change the_year_before_bhill.median_price_per_sqft the_last_year_bhill.median_price_per_sqft as median_price_per_sqft_annual_change_bhill %}
+    <div class="col-sm-12">
+        <table class="table table-bordered table-condensed">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="text-right">Sales</th>
+                    <th class="text-right">Median price</th>
+                    <th class="text-right">Per sqft.</th>
+                    <th class="text-right">Median price change</th>
+                    <th class="text-right">Per sqft. change</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bunker Hill Tower</td>
+                    <td class="text-right">{{ the_last_year_bhill.count }}</td>
+                    <td class="text-right">${{ the_last_year_bhill.median_price|floatformat:0|intcomma }}</td>
+                    <td class="text-right">${{ the_last_year_bhill.median_price_per_sqft|floatformat:0|intcomma }}</td>
+                    <td class="text-right {% if  median_price_annual_change_bhill >= 0 %}bg-success{% else %}bg-danger{% endif %}">
+                        {{ median_price_annual_change_bhill|floatformat:1 }}%
+                    </td>
+                    <td class="text-right {% if  median_price_per_sqft_annual_change_bhill >= 0 %}bg-success{% else %}bg-danger{% endif %}">
+                        {{ median_price_per_sqft_annual_change_bhill|floatformat:1 }}%
+                    </td>
+                </tr>
+                <tr>
+                    <td>Promenade</td>
+                    <td class="text-right">{{ the_last_year_prom.count }}</td>
+                    <td class="text-right">${{ the_last_year_prom.median_price|floatformat:0|intcomma }}</td>
+                    <td class="text-right">${{ the_last_year_prom.median_price_per_sqft|floatformat:0|intcomma }}</td>
+                    <td class="text-right {% if  median_price_annual_change_prom >= 0 %}bg-success{% else %}bg-danger{% endif %}">
+                        {{ median_price_annual_change_prom|floatformat:1 }}%
+                    </td>
+                    <td class="text-right {% if  median_price_per_sqft_annual_change_prom >= 0 %}bg-success{% else %}bg-danger{% endif %}">
+                        {{ median_price_per_sqft_annual_change_prom|floatformat:1 }}%
+                    </td>
+                </tr>
+                <tr>
+                    <td>Promenade West</td>
+                    <td class="text-right">{{ the_last_year_pwest.count }}</td>
+                    <td class="text-right">${{ the_last_year_pwest.median_price|floatformat:0|intcomma }}</td>
+                    <td class="text-right">${{ the_last_year_pwest.median_price_per_sqft|floatformat:0|intcomma }}</td>
+                    <td class="text-right {% if  median_price_annual_change_pwest >= 0 %}bg-success{% else %}bg-danger{% endif %}">
+                        {{ median_price_annual_change_pwest|floatformat:1 }}%
+                    </td>
+                    <td class="text-right {% if  median_price_per_sqft_annual_change_pwest >= 0 %}bg-success{% else %}bg-danger{% endif %}">
+                        {{ median_price_per_sqft_annual_change_pwest|floatformat:1 }}%
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
 {% comment %}
 <em>{{ median_price_annual_change_pwest|floatformat:1 }}% {% if median_price_annual_change_pwest >= 0 %}higher{% else %}lower{% endif %}</em>
 
