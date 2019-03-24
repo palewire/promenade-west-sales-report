@@ -7,7 +7,7 @@
       "encoding": {
         "x": {
           "type": "ordinal",
-          "axis": {"labelAngle": 0, "title": ""},
+          "axis": {"labelAngle": 0},
           "field": "date",
           "timeUnit": "year",
           "title": "Year"
@@ -15,7 +15,7 @@
         "y": {
           "type": "quantitative",
           "aggregate": "median",
-          "axis": {"format": "$s", "grid": false, "title": ""},
+          "axis": {"format": "$s", "grid": false},
           "field": "price",
           "title": "Median sales price"
         }
@@ -39,7 +39,7 @@
         },
         "x": {
           "type": "ordinal",
-          "axis": {"labelAngle": 0, "title": ""},
+          "axis": {"labelAngle": 0},
           "field": "date",
           "timeUnit": "year",
           "title": "Year"
@@ -47,7 +47,7 @@
         "y": {
           "type": "quantitative",
           "aggregate": "median",
-          "axis": {"format": "$s", "grid": false, "title": ""},
+          "axis": {"format": "$s", "grid": false},
           "field": "price",
           "title": "Median sales price"
         }

@@ -7,14 +7,14 @@
       "encoding": {
         "x": {
           "type": "ordinal",
-          "axis": {"labelAngle": 0, "title": ""},
+          "axis": {"labelAngle": 0, "title": "Year"},
           "field": "date",
           "timeUnit": "year"
         },
         "y": {
           "type": "quantitative",
           "aggregate": "count",
-          "axis": {"grid": false, "title": ""}
+          "axis": {"grid": false, "title": "Sales"}
         }
       }
     },
@@ -31,15 +31,14 @@
         "text": {"type": "quantitative", "aggregate": "count"},
         "x": {
           "type": "ordinal",
-          "axis": {"labelAngle": 0, "title": ""},
+          "axis": {"labelAngle": 0, "title": "Year"},
           "field": "date",
           "timeUnit": "year"
         },
         "y": {
           "type": "quantitative",
           "aggregate": "count",
-          "axis": {"grid": false, "title": ""},
-          "scale": {"domain": [0, 14]}
+          "axis": {"grid": false, "title": "Sales"}
         }
       }
     }
