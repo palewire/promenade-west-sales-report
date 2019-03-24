@@ -23,8 +23,6 @@
 
 {% block content %}
 {% now as now %}
-{% percent_change the_year_before_pwest.median_price the_last_year_pwest.median_price as median_price_annual_change_pwest %}
-
 <header class="row">
     <h1 class="col-sm-12">Promenade West Sales Report</h1>
     <p class="dateline col-sm-12">Updated {{ now|date:"N j, Y"}}</p>
@@ -52,7 +50,11 @@
 
 
 <section class="row">
+    {% average everything_pwest_by_year as count_by_year_pwest %}
     <h3 class="col-sm-12">Long-term trends</h3>
+    <p class="lead col-sm-9">
+        Promenade West has averaged <em>{{ count_by_year_pwest|floatformat:1 }}</em> sales per year.
+    </p>
     <div id="sales-by-year-pwest"></div>
     <script>
         var spec = {% include "report/charts/sales_by_year_pwest.vg.json" %};
