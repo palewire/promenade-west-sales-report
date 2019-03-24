@@ -14,6 +14,7 @@
           bedrooms: {{ obj.bedrooms }},
           bathrooms: {{ obj.bathrooms }},
           price: {{ obj.price }},
+          price_per_sqft: {{ obj.price_per_sqft }},
           date: "{{ obj.date|date:"Y-m-d" }}T00:00:00"
       }{% if not forloop.last %},{% endif %}
       {% endfor %}
@@ -29,8 +30,6 @@
 </header>
 
 <section class="row">
-    {% percent_change the_year_before_pwest.median_price the_last_year_pwest.median_price as median_price_annual_change_pwest %}
-
     <h3 class="col-sm-12">Recent sales</h3>
 
     <p class="col-sm-9 lead">There have been <em>{{ the_last_year_pwest.count }}</em> sales at Promenade West in the last 12 months. The median sales price was <em>${{ the_last_year_pwest.median_price|floatformat|intcomma }}</em> per unit and <em>${{ the_last_year_pwest.median_price_per_sqft|floatformat:0 }}</em> per square foot.</p>
@@ -52,19 +51,59 @@
     {% endwith %}
 </section>
 
-
 <section class="row">
-    <h4 class="col-sm-12">Last year</h4>
+    <h3 class="col-sm-12">Recent trends</h3>
 
     <p class="col-sm-9 lead">
-        That's a <em>{{ median_price_annual_change_pwest|floatformat:1 }}% increase</em> in sales prices over the previous 12 months, when the median sales price for <em>{{ the_year_before_pwest.count }}</em> sales was <em>${{ the_year_before_pwest.median_price|floatformat|intcomma }}</em>.
+        There were <em>{{ the_year_before_pwest.count }} sales</em> in the prior 12-month period. The median sales price was <em>${{ the_year_before_pwest.median_price|floatformat:0|intcomma }}</em> per unit and <em>${{ the_year_before_pwest.median_price_per_sqft|floatformat:0|intcomma }}</em> per square foot.
     </p>
 
-    {% with the_year_before_pwest as sales_list %}
-        {% include "report/tables/sales.html" %}
-    {% endwith %}
-</section>
+    <p class="col-sm-9 lead">
+        Here is how that compares to our latest year:
+    </p>
 
+    <div class="col-sm-9">
+        {% percent_change the_year_before_pwest.count the_last_year_pwest.count as count_annual_change_pwest %}
+        {% percent_change the_year_before_pwest.median_price the_last_year_pwest.median_price as median_price_annual_change_pwest %}
+        {% percent_change the_year_before_pwest.median_price_per_sqft the_last_year_pwest.median_price_per_sqft as median_price_per_sqft_annual_change_pwest %}
+        <table class="table table-bordered table-condensed">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th class="text-right">Sales</th>
+                    <th class="text-right">Median price</th>
+                    <th class="text-right">Per sqft.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The year before</td>
+                    <td class="text-right">{{ the_year_before_pwest.count }}</td>
+                    <td class="text-right">${{ the_year_before_pwest.median_price|floatformat:0|intcomma }}</td>
+                    <td class="text-right">${{ the_year_before_pwest.median_price_per_sqft|floatformat:0|intcomma }}</td>
+                </tr>
+                <tr>
+                    <td>This past year</td>
+                    <td class="text-right">{{ the_last_year_pwest.count }}</td>
+                    <td class="text-right">${{ the_last_year_pwest.median_price|floatformat:0|intcomma }}</td>
+                    <td class="text-right">${{ the_last_year_pwest.median_price_per_sqft|floatformat:0|intcomma }}</td>
+                </tr>
+                <tr>
+                    <th>Change</th>
+                    <td class="text-right {% if  count_annual_change_pwest >= 0 %}bg-success{% else %}bg-danger{% endif %}">
+                        {{ count_annual_change_pwest|floatformat:1 }}%
+                    </td>
+                    <td class="text-right {% if  median_price_annual_change_pwest >= 0 %}bg-success{% else %}bg-danger{% endif %}">
+                        {{ median_price_annual_change_pwest|floatformat:1 }}%
+                    </td>
+                    <td class="text-right {% if  median_price_per_sqft_annual_change_pwest >= 0 %}bg-success{% else %}bg-danger{% endif %}">
+                        {{ median_price_per_sqft_annual_change_pwest|floatformat:1 }}%
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
 
 <section class="row">
     {% average everything_pwest_by_year as count_by_year_pwest %}
@@ -86,9 +125,17 @@
         var spec = {% include "report/charts/median_price_by_year_pwest.vg.json" %};
         vegaEmbed('#median-price-by-year-pwest', spec);
     </script>
+    <div id="median-price-per-sqft-by-year-pwest"></div>
+    <script>
+        var spec = {% include "report/charts/median_price_per_sqft_by_year_pwest.vg.json" %};
+        vegaEmbed('#median-price-per-sqft-by-year-pwest', spec);
+    </script>
 </section>
 
 {% comment %}
+<em>{{ median_price_annual_change_pwest|floatformat:1 }}% {% if median_price_annual_change_pwest >= 0 %}higher{% else %}lower{% endif %}</em>
+
+
  Adjusting for the size of the units, the median price per square foot was ${{ the_last_year_pwest.median_price_per_sqft|floatformat:0 }}.
 
 <p class="col-sm-10">

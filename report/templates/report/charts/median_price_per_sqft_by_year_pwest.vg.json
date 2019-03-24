@@ -1,0 +1,61 @@
+{
+  "config": {"view": {"width": 400, "height": 300, "strokeOpacity": 0}},
+  "layer": [
+    {
+      "data": {"name": "data-e56a9acc58a2b00697d132fed11bcccc"},
+      "mark": {"type": "bar", "color": "black"},
+      "encoding": {
+        "x": {
+          "type": "ordinal",
+          "axis": {"labelAngle": 0},
+          "field": "date",
+          "timeUnit": "year",
+          "title": "Year"
+        },
+        "y": {
+          "type": "quantitative",
+          "aggregate": "median",
+          "axis": {"format": "$s", "grid": false},
+          "field": "price_per_sqft",
+          "title": "Median sales price per sqft"
+        }
+      }
+    },
+    {
+      "data": {"name": "data-e56a9acc58a2b00697d132fed11bcccc"},
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "dy": -9,
+        "size": 16
+      },
+      "encoding": {
+        "text": {
+          "type": "quantitative",
+          "aggregate": "median",
+          "field": "price_per_sqft",
+          "format": "$.3s"
+        },
+        "x": {
+          "type": "ordinal",
+          "axis": {"labelAngle": 0},
+          "field": "date",
+          "timeUnit": "year",
+          "title": "Year"
+        },
+        "y": {
+          "type": "quantitative",
+          "aggregate": "median",
+          "axis": {"format": "$s", "grid": false},
+          "field": "price_per_sqft",
+          "title": "Median sales price per sqft"
+        }
+      }
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json",
+  "datasets": {
+    "data-e56a9acc58a2b00697d132fed11bcccc": pwest_sales
+  }
+}
