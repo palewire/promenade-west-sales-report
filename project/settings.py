@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'buildings',
     'sales',
     'listings',
+    'pendings',
     'report',
 ]
 

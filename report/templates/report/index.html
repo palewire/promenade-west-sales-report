@@ -32,18 +32,30 @@
 <section class="row">
     <h3 class="col-sm-12">Recent sales</h3>
 
-    <p class="col-sm-9 lead">There have been <em>{{ the_last_year_pwest.count }}</em> sales at Promenade West in the last 12 months. The median sales price was <em>${{ the_last_year_pwest.median_price|floatformat|intcomma }}</em> per unit and <em>${{ the_last_year_pwest.median_price_per_sqft|floatformat:0 }}</em> per square foot.</p>
+    <p class="col-sm-9 lead">There have been <em>{{ the_last_year_pwest.count|apnumber }}</em> sales at Promenade West in the last 12 months. The median sales price was <em>${{ the_last_year_pwest.median_price|floatformat|intcomma }}</em> per unit and <em>${{ the_last_year_pwest.median_price_per_sqft|floatformat:0 }}</em> per square foot.</p>
 
     {% with the_last_year_pwest as sales_list %}
         {% include "report/tables/sales.html" %}
     {% endwith %}
 </section>
 
+{% if pendings_pwest %}
+<section class="row">
+    <h3 class="col-sm-12">Pending sales</h3>
+
+    <p class="col-sm-9 lead">There {% if pendings_pwest.count > 1 %}are{% else %}is{% endif %} <em>{{ pendings_pwest.count|apnumber }}</em> pending sale{{ pendings_pwest.count|pluralize }} in the building.</p>
+
+    {% with pendings_pwest as sales_list %}
+        {% include "report/tables/sales.html" %}
+    {% endwith %}
+</section>
+{% endif %}
+
 <section class="row">
     <h3 class="col-sm-12">Current listings</h3>
 
     <p class="col-sm-9 lead">
-        There are now <em>{{ listings_pwest.count }}</em> units in the building up for sale. The median asking price is <em>${{ listings_pwest.median_price|floatformat|intcomma }}</em> per unit and <em>${{ listings_pwest.median_price_per_sqft|floatformat:0 }}</em> per square foot.
+        There are now <em>{{ listings_pwest.count|apnumber }}</em> units in the building up for sale. The median asking price is <em>${{ listings_pwest.median_price|floatformat|intcomma }}</em> per unit and <em>${{ listings_pwest.median_price_per_sqft|floatformat:0 }}</em> per square foot.
     </p>
 
     {% with listings_pwest as listings_list %}
@@ -55,7 +67,7 @@
     <h3 class="col-sm-12">Recent trends</h3>
 
     <p class="col-sm-9 lead">
-        There were <em>{{ the_year_before_pwest.count }} sales</em> in the prior 12-month period. The median sales price was <em>${{ the_year_before_pwest.median_price|floatformat:0|intcomma }}</em> per unit and <em>${{ the_year_before_pwest.median_price_per_sqft|floatformat:0|intcomma }}</em> per square foot.
+        There were <em>{{ the_year_before_pwest.count|apnumber }} sales</em> in the prior 12-month period. The median sales price was <em>${{ the_year_before_pwest.median_price|floatformat:0|intcomma }}</em> per unit and <em>${{ the_year_before_pwest.median_price_per_sqft|floatformat:0|intcomma }}</em> per square foot.
     </p>
 
     <p class="col-sm-9 lead">

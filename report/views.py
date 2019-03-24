@@ -8,6 +8,7 @@ from django.db.models.functions import TruncYear
 
 # Models
 from sales.models import Sale
+from pendings.models import Pending
 from listings.models import Listing
 
 
@@ -30,6 +31,8 @@ class IndexView(TemplateView):
             date__year__lt=timezone.now().year
         ).values('year').annotate(count=Count("*")).order_by("year")
 
+        pendings_pwest = Pending.objects.all().order_by("-price")
+
         listings_pwest = Listing.objects.all().order_by("-price")
 
         today = timezone.now().date()
@@ -44,6 +47,7 @@ class IndexView(TemplateView):
             "everything": everything,
             "everything_pwest": everything_pwest,
             "everything_pwest_by_year": everything_pwest_by_year,
+            "pendings_pwest": pendings_pwest,
             "listings_pwest": listings_pwest,
             "today": today,
             "one_year_ago": one_year_ago,
