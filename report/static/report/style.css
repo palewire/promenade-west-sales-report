@@ -41,13 +41,12 @@ section:first-of-type {
     margin-top: 0;
 }
 
-
 .table {
-    max-width: 98%;
-    width: 98%;
+    margin-bottom: 35px;
 }
 .table thead th {
     border-bottom: 1px solid black;
+    font-weight: 500;
 }
 .table-bordered td, .table-bordered th {
     border: 1px solid black;
