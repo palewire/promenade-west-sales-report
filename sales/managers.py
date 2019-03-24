@@ -29,7 +29,7 @@ class SaleQuerySet(models.QuerySet):
         if count % 2 == 1:
             return values[int(round(count/2))]
         else:
-            return sum(values[count/2-1:count/2+1])/2.0
+            return sum(values[int(count/2-1):int(count/2+1)])/2.0
 
     def median_price(self):
         """
