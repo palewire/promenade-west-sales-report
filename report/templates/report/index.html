@@ -1,6 +1,26 @@
 {% extends "report/base.html" %}
 {% load humanize report_tags %}
 
+{% block extrajs %}
+<script>
+    var pwest_sales = [
+      {% for obj in everything_pwest %}
+      {
+          name: "{{ obj.building.name }}",
+          region: "{{ obj.building.region }}",
+          url: "{{ obj.url }}",
+          unit: "{{ obj.unit }}",
+          square_feet: {{ obj.square_feet }},
+          bedrooms: {{ obj.bedrooms }},
+          bathrooms: {{ obj.bathrooms }},
+          price: {{ obj.price }},
+          date: "{{ obj.date|date:"Y-m-d" }}T00:00:00"
+      }{% if not forloop.last %},{% endif %}
+      {% endfor %}
+    ];
+</script>
+{% endblock %}
+
 {% block content %}
 {% now as now %}
 {% percent_change the_year_before_pwest.median_price the_last_year_pwest.median_price as median_price_annual_change_pwest %}
@@ -13,7 +33,7 @@
 <section class="row">
     {% percent_change the_year_before.median_price the_last_year.median_price as median_price_annual_change %}
 
-    <h4 class="col-sm-12">Recent sales</h4>
+    <h3 class="col-sm-12">Recent sales</h3>
 
     <p class="col-sm-9 lead">There have been <em>{{ the_last_year_pwest.count }}</em> sales at Promenade West in the last 12 months. The median sales price was <em>${{ the_last_year_pwest.median_price|floatformat|intcomma }}</em>.</p>
 
@@ -28,6 +48,22 @@
     {% with the_year_before_pwest as sales_list %}
         {% include "report/sales_table.html" %}
     {% endwith %}
+</section>
+
+
+<section class="row">
+    <h3 class="col-sm-12">Long-term trends</h3>
+    <div id="sales-by-year-pwest"></div>
+    <script>
+        var spec = {% include "report/charts/sales_by_year_pwest.vg.json" %};
+        vegaEmbed('#sales-by-year-pwest', spec);
+    </script>
+
+    <div id="median-price-by-year-pwest"></div>
+    <script>
+        var spec = {% include "report/charts/median_price_by_year_pwest.vg.json" %};
+        vegaEmbed('#median-price-by-year-pwest', spec);
+    </script>
 </section>
 
 {% comment %}
@@ -150,6 +186,4 @@
     </figure>
 </section>
 {% endcomment %}
-
-<section class="row-fluid"></section>
 {% endblock %}
