@@ -1,4 +1,5 @@
 from django.db import models
+from .managers import SaleManager
 from buildings.models import Building
 
 
@@ -21,6 +22,9 @@ class Sale(models.Model):
     # About our scrape
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+
+    # Managers
+    objects = SaleManager()
 
     class Meta:
         ordering = ("-date", "-price")

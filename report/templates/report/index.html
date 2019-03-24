@@ -1,0 +1,162 @@
+{% extends "report/base.html" %}
+{% load humanize report_tags %}
+
+{% block content %}
+{% now as now %}
+{% percent_change the_year_before.median_price the_last_year.median_price as median_price_annual_change %}
+{% percent_change the_year_before_pwest.median_price the_last_year_pwest.median_price as median_price_annual_change_pwest %}
+
+<header class="row-fluid">
+    <h1 class="col-sm-12 display-4">Promenade West Sales Report</h1>
+    <p class="col-sm-12">Updated {{ now|date:"N j, Y"}}</p>
+    <p class="col-sm-12">There have been {{ the_last_year_pwest.count }} sales at Promenade West in the last 12 months. The median sales price was ${{ the_last_year_pwest.median_price|floatformat|intcomma }}, a {{ median_price_annual_change_pwest|floatformat:1 }}% increase over previous 12 months. The median price per square foot comes out to ${{ the_last_year_pwest.median_price_per_sqft|floatformat:0 }}.</p>
+    <p class="col-sm-12">
+        In comparison, there have been {{ the_last_year.count }} sales in all of downtown this past year. The median sales price across the entire area was ${{ the_last_year.median_price|floatformat|intcomma }}, a {{ median_price_annual_change|floatformat:"1" }}% increase over last year. The median price per square foot was ${{ the_last_year.median_price_per_sqft|floatformat:0 }}.
+    </p>
+</header>
+
+{% comment %}
+<section class="row-fluid">
+    <h4 class="col-sm-12">Sales this year at Promenade West</h4>
+    <table class="col-sm-7 table table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th class="text-right">Unit</th>
+                <th class="text-right">Price</th>
+                <th class="text-right">Sqft.</th>
+                <th class="text-right">Per sqft.</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for row in site.data.pwest_sales %}
+        {% if forloop.index <= site.data.pwest.this_year.count %}
+        <tr>
+            <td><a href="{{ row.url }}">{{ row.date|date:"%Y-%m-%d" }}</a></td>
+            <td class="text-right">{{ row.unit }}</td>
+            <td class="text-right">${{ row.price|round:0 }}</td>
+            <td class="text-right">{{ row.square_feet|round:0 }}</td>
+            <td class="text-right">${{ row.price_per_square_foot|round:0 }}</td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+    </tbody>
+    </table>
+</section>
+
+
+<section class="row-fluid">
+    <h4 class="col-sm-12">Sales volume</h4>
+    <p class="col-sm-12">Promenade West in black. Downtown in gray.</p>
+    <figure>
+        <img src="assets/sales-by-year.svg" class="img-fluid col-sm-5">
+        <img src="assets/dtla-sales-by-year.svg" class="img-fluid col-sm-5">
+    </figure>
+</section>
+
+
+<section class="row-fluid">
+    <h4 class="col-sm-12">Median sales price by year</h4>
+    <p class="col-sm-12">Promenade West in black. Downtown in gray.</p>
+    <figure>
+        <img src="assets/price-by-year.svg" class="img-fluid col-sm-5">
+        <img src="assets/dtla-price-by-year.svg" class="img-fluid col-sm-5">
+    </figure>
+</section>
+
+<section class="row-fluid">
+    <h4 class="col-sm-12">Median price per square foot by year</h4>
+    <p class="col-sm-12">The median sales price per square foot at Promenade West this year was ${{ site.data.pwest.this_year.median_price_per_sqft|round|intcomma }}, a {{ site.data.pwest.change.median_price_per_sqft|round:"1" }}% increase over last year.</p>
+    <p class="col-sm-12">
+        In comparison, the median sales price per square foot across all of downtown was ${{ site.data.dtla.this_year.median_price_per_sqft|round|intcomma }}, a {{ site.data.dtla.change.median_price_per_sqft|round:"1" }}% increase over last year.
+    </p>
+
+    <p class="col-sm-12">Promenade West in black. Downtown in gray.</p>
+    <figure>
+        <img src="assets/price-per-sqft-by-year.svg" class="img-fluid col-sm-5">
+        <img src="assets/dtla-price-per-sqft-by-year.svg" class="img-fluid col-sm-5">
+    </figure>
+</section>
+
+<section class="row-fluid">
+    <h4 class="col-sm-12">Bunker Hill prices</h4>
+    <figure>
+        <img src="assets/bunker-hill-price-by-date.svg" class="img-fluid col-sm-12">
+    </figure>
+    <table class="col-sm-7 table table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th colspan=6>Median prices</th>
+            </tr>
+            <tr>
+                <th width=20%>Building</th>
+                <th class="text-right">2014</th>
+                <th class="text-right">2015</th>
+                <th class="text-right">2016</th>
+                <th class="text-right">2017</th>
+                <th class="text-right">2018</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for row in site.data.bunker_hill_prices %}
+        <tr>
+            <td width=20%>{{ row.building_name }}</td>
+            <td class="text-right">${{ row.2014|round:0 }}</td>
+            <td class="text-right">${{ row.2015|round:0 }}</td>
+            <td class="text-right">${{ row.2016|round:0 }}</td>
+            <td class="text-right">${{ row.2017|round:0 }}</td>
+            <td class="text-right">${{ row.2018|round:0 }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+</section>
+
+<section class="row-fluid">
+    <h4 class="col-sm-12">Bunker Hill prices per square foot</h4>
+    <figure>
+        <img src="assets/bunker-hill-price-per-sqft-by-date.svg" class="img-fluid col-sm-12">
+    </figure>
+    <table class="col-sm-7 table table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th colspan=6>Median price per square foot</th>
+            </tr>
+            <tr>
+                <th width=20%>Building</th>
+                <th class="text-right">2014</th>
+                <th class="text-right">2015</th>
+                <th class="text-right">2016</th>
+                <th class="text-right">2017</th>
+                <th class="text-right">2018</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for row in site.data.bunker_hill_price_per_sqft %}
+        <tr>
+            <td width=20%>{{ row.building_name }}</td>
+            <td class="text-right">${{ row.2014|round:0 }}</td>
+            <td class="text-right">${{ row.2015|round:0 }}</td>
+            <td class="text-right">${{ row.2016|round:0 }}</td>
+            <td class="text-right">${{ row.2017|round:0 }}</td>
+            <td class="text-right">${{ row.2018|round:0 }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+</section>
+
+<section class="row-fluid">
+    <h4 class="col-sm-12">Buildings with the largest units</h4>
+    <p class="col-sm-12">
+       Units sold in Promenade West are among the largest downtown. The median size of all sales is {{ site.data.pwest.all_time.median_sqft|round|intcomma }} square feet.
+    </p>
+    <p class="col-sm-12">Promenade West in black. Other buildings in gray.</p>
+    <figure>
+        <img src="assets/size-by-building.svg" class="img-fluid col-sm-8">
+    </figure>
+</section>
+{% endcomment %}
+
+<section class="row-fluid"></section>
+{% endblock %}
