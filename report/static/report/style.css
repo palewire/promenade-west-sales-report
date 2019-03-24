@@ -3,6 +3,10 @@ body {
     font-family: 'IBM Plex Mono', monospace;
     margin-bottom: 100px;
     margin-top: 40px;
+
+}
+h1 {
+    font-weight: 700;
 }
 a {
     color: black;
@@ -12,6 +16,18 @@ a:hover {
     color: black;
     text-decoration: none;
 }
+.dateline {
+    font-weight: 300;
+}
+em {
+    font-style: normal;
+    font-weight: 500;
+}
+p {
+    font-weight: 400;
+}
+
+
 header {
     border-bottom: 1px solid gray;
 }
@@ -24,8 +40,9 @@ section:first-of-type {
     border: none;
     margin-top: 0;
 }
+
+
 .table {
-    margin: 10px auto 10px auto;
     max-width: 98%;
     width: 98%;
 }
@@ -35,6 +52,8 @@ section:first-of-type {
 .table-bordered td, .table-bordered th {
     border: 1px solid black;
 }
+
+
 figure {
     clear: both;
     display: block;

@@ -3,45 +3,57 @@
 
 {% block content %}
 {% now as now %}
-{% percent_change the_year_before.median_price the_last_year.median_price as median_price_annual_change %}
 {% percent_change the_year_before_pwest.median_price the_last_year_pwest.median_price as median_price_annual_change_pwest %}
 
-<header class="row-fluid">
-    <h1 class="col-sm-12 display-4">Promenade West Sales Report</h1>
-    <p class="col-sm-12">Updated {{ now|date:"N j, Y"}}</p>
-    <p class="col-sm-12">There have been {{ the_last_year_pwest.count }} sales at Promenade West in the last 12 months. The median sales price was ${{ the_last_year_pwest.median_price|floatformat|intcomma }}, a {{ median_price_annual_change_pwest|floatformat:1 }}% increase over previous 12 months. The median price per square foot comes out to ${{ the_last_year_pwest.median_price_per_sqft|floatformat:0 }}.</p>
-    <p class="col-sm-12">
-        In comparison, there have been {{ the_last_year.count }} sales in all of downtown this past year. The median sales price across the entire area was ${{ the_last_year.median_price|floatformat|intcomma }}, a {{ median_price_annual_change|floatformat:"1" }}% increase over last year. The median price per square foot was ${{ the_last_year.median_price_per_sqft|floatformat:0 }}.
-    </p>
+<header class="row">
+    <h1 class="col-sm-12">Promenade West Sales Report</h1>
+    <p class="dateline col-sm-12">Updated {{ now|date:"N j, Y"}}</p>
+</header>
+
+<section class="row">
+    {% percent_change the_year_before.median_price the_last_year.median_price as median_price_annual_change %}
+
+    <h4 class="col-sm-12">Recent sales</h4>
+
+    <p class="col-sm-9 lead">There have been <em>{{ the_last_year_pwest.count }}</em> sales at Promenade West in the last 12 months. The median sales price was <em>${{ the_last_year_pwest.median_price|floatformat|intcomma }}</em>, a <em>{{ median_price_annual_change_pwest|floatformat:1 }}% increase</em> over previous 12 months.</p>
+
+    <div class="col-sm-9">
+        <table class="table table-bordered table-condensed">
+            <thead>
+                <tr>
+                    <th></ht>
+                    <th>Date</th>
+                    <th class="text-right">Unit</th>
+                    <th class="text-right">Price</th>
+                    <th class="text-right">Sqft.</th>
+                    <th class="text-right">Per sqft.</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for row in the_last_year_pwest %}
+            <tr>
+                <td>{{ forloop.counter }}.</td>
+                <td><a href="{{ row.url }}" target="_blank">{{ row.date|date:"Y-m-d" }}</a></td>
+                <td class="text-right">{{ row.unit }}</td>
+                <td class="text-right">{% if forloop.first %}${% endif %}{{ row.price|floatformat:0|intcomma }}</td>
+                <td class="text-right">{{ row.square_feet|floatformat:0 }}</td>
+                <td class="text-right">{% if forloop.first %}${% endif %}{{ row.price_per_sqft|floatformat:0 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+        </table>
+    </div>
 </header>
 
 {% comment %}
+ Adjusting for the size of the units, the median price per square foot was ${{ the_last_year_pwest.median_price_per_sqft|floatformat:0 }}.
+
+<p class="col-sm-10">
+    In comparison, there have been {{ the_last_year.count }} sales in all of downtown this past year. The median sales price across the entire area was ${{ the_last_year.median_price|floatformat|intcomma }}, a {{ median_price_annual_change|floatformat:"1" }}% increase over last year. The median price per square foot was ${{ the_last_year.median_price_per_sqft|floatformat:0 }}.
+</p>
+
 <section class="row-fluid">
-    <h4 class="col-sm-12">Sales this year at Promenade West</h4>
-    <table class="col-sm-7 table table-bordered table-condensed">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th class="text-right">Unit</th>
-                <th class="text-right">Price</th>
-                <th class="text-right">Sqft.</th>
-                <th class="text-right">Per sqft.</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for row in site.data.pwest_sales %}
-        {% if forloop.index <= site.data.pwest.this_year.count %}
-        <tr>
-            <td><a href="{{ row.url }}">{{ row.date|date:"%Y-%m-%d" }}</a></td>
-            <td class="text-right">{{ row.unit }}</td>
-            <td class="text-right">${{ row.price|round:0 }}</td>
-            <td class="text-right">{{ row.square_feet|round:0 }}</td>
-            <td class="text-right">${{ row.price_per_square_foot|round:0 }}</td>
-        </tr>
-        {% endif %}
-        {% endfor %}
-    </tbody>
-    </table>
+
 </section>
 
 
