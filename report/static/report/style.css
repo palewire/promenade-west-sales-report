@@ -26,6 +26,12 @@ em {
 p {
     font-weight: 400;
 }
+.bg-success {
+    background-color: #85c193 !important;
+}
+.bg-danger {
+    background-color: #c1767b !important;
+}
 
 
 header {
