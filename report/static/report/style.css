@@ -46,6 +46,11 @@ section:first-of-type {
     border: none;
     margin-top: 0;
 }
+@media print {
+  .page-break {
+      page-break-after: always;
+  }
+}
 
 .table, .vega-embed {
     margin-bottom: 35px;
