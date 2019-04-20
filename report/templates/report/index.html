@@ -155,10 +155,15 @@
     <p class="lead col-sm-12">
         How our most recent year stacks up against nearby buildings.
     </p>
+    {% percent_change the_year_before.median_price the_last_year.median_price as median_price_annual_change %}
+    {% percent_change the_year_before.median_price_per_sqft the_last_year.median_price_per_sqft as median_price_per_sqft_annual_change %}
+
     {% percent_change the_year_before_prom.median_price the_last_year_prom.median_price as median_price_annual_change_prom %}
     {% percent_change the_year_before_prom.median_price_per_sqft the_last_year_prom.median_price_per_sqft as median_price_per_sqft_annual_change_prom %}
+
     {% percent_change the_year_before_bhill.median_price the_last_year_bhill.median_price as median_price_annual_change_bhill %}
     {% percent_change the_year_before_bhill.median_price_per_sqft the_last_year_bhill.median_price_per_sqft as median_price_per_sqft_annual_change_bhill %}
+
     <div class="col-sm-12">
         <table class="table table-bordered table-condensed">
             <thead>
@@ -206,6 +211,18 @@
                     </td>
                     <td class="text-right {% if  median_price_per_sqft_annual_change_pwest >= 0 %}bg-success{% else %}bg-danger{% endif %}">
                         {{ median_price_per_sqft_annual_change_pwest|floatformat:1 }}%
+                    </td>
+                </tr>
+                <tr>
+                    <td>All of downtown</td>
+                    <td class="text-right">{{ the_last_year.count }}</td>
+                    <td class="text-right">${{ the_last_year.median_price|floatformat:0|intcomma }}</td>
+                    <td class="text-right">${{ the_last_year.median_price_per_sqft|floatformat:0|intcomma }}</td>
+                    <td class="text-right {% if  median_price_annual_change >= 0 %}bg-success{% else %}bg-danger{% endif %}">
+                        {{ median_price_annual_change|floatformat:1 }}%
+                    </td>
+                    <td class="text-right {% if  median_price_per_sqft_annual_change >= 0 %}bg-success{% else %}bg-danger{% endif %}">
+                        {{ median_price_per_sqft_annual_change|floatformat:1 }}%
                     </td>
                 </tr>
             </tbody>
