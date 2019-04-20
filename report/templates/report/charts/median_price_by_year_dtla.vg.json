@@ -1,0 +1,61 @@
+{
+  "config": {"view": {"width": 400, "height": 300, "strokeOpacity": 0}},
+  "layer": [
+    {
+      "data": {"name": "data-e56a9acc58a2b00697d132fed11bcccc"},
+      "mark": {"type": "bar", "color": "black"},
+      "encoding": {
+        "x": {
+          "type": "ordinal",
+          "axis": {"labelAngle": 0},
+          "field": "date",
+          "timeUnit": "year",
+          "title": "Year"
+        },
+        "y": {
+          "type": "quantitative",
+          "aggregate": "median",
+          "axis": {"format": "$s", "grid": false},
+          "field": "price",
+          "title": "Median sales price"
+        }
+      }
+    },
+    {
+      "data": {"name": "data-e56a9acc58a2b00697d132fed11bcccc"},
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "dy": -9,
+        "size": 16
+      },
+      "encoding": {
+        "text": {
+          "type": "quantitative",
+          "aggregate": "median",
+          "field": "price",
+          "format": "$.3s"
+        },
+        "x": {
+          "type": "ordinal",
+          "axis": {"labelAngle": 0},
+          "field": "date",
+          "timeUnit": "year",
+          "title": "Year"
+        },
+        "y": {
+          "type": "quantitative",
+          "aggregate": "median",
+          "axis": {"format": "$s", "grid": false},
+          "field": "price",
+          "title": "Median sales price"
+        }
+      }
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json",
+  "datasets": {
+    "data-e56a9acc58a2b00697d132fed11bcccc": dtla_sales
+  }
+}

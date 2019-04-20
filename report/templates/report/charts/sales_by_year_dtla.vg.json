@@ -1,0 +1,50 @@
+{
+  "config": {"view": {"width": 400, "height": 300, "strokeOpacity": 0}},
+  "layer": [
+    {
+      "data": {"name": "data-e56a9acc58a2b00697d132fed11bcccc"},
+      "mark": {"type": "bar", "color": "black"},
+      "encoding": {
+        "x": {
+          "type": "ordinal",
+          "axis": {"labelAngle": 0, "title": "Year"},
+          "field": "date",
+          "timeUnit": "year"
+        },
+        "y": {
+          "type": "quantitative",
+          "aggregate": "count",
+          "axis": {"grid": false, "title": "Sales"}
+        }
+      }
+    },
+    {
+      "data": {"name": "data-e56a9acc58a2b00697d132fed11bcccc"},
+      "mark": {
+        "type": "text",
+        "align": "center",
+        "baseline": "middle",
+        "dy": -12,
+        "size": 20
+      },
+      "encoding": {
+        "text": {"type": "quantitative", "aggregate": "count"},
+        "x": {
+          "type": "ordinal",
+          "axis": {"labelAngle": 0, "title": "Year"},
+          "field": "date",
+          "timeUnit": "year"
+        },
+        "y": {
+          "type": "quantitative",
+          "aggregate": "count",
+          "axis": {"grid": false, "title": "Sales"}
+        }
+      }
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.6.0.json",
+  "datasets": {
+    "data-e56a9acc58a2b00697d132fed11bcccc": dtla_sales
+  }
+}
