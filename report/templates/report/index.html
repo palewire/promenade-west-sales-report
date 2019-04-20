@@ -19,6 +19,22 @@
       }{% if not forloop.last %},{% endif %}
       {% endfor %}
     ];
+    var dtla_sales = [
+        {% for obj in everything %}
+        {
+            name: "{{ obj.building.name }}",
+            region: "{{ obj.building.region }}",
+            url: "{{ obj.url }}",
+            unit: "{{ obj.unit }}",
+            square_feet: {{ obj.square_feet }},
+            bedrooms: {{ obj.bedrooms }},
+            bathrooms: {{ obj.bathrooms }},
+            price: {{ obj.price }},
+            price_per_sqft: {{ obj.price_per_sqft }},
+            date: "{{ obj.date|date:"Y-m-d" }}T00:00:00"
+        }{% if not forloop.last %},{% endif %}
+        {% endfor %}
+    ]
 </script>
 {% endblock %}
 
@@ -132,7 +148,6 @@
         var spec = {% include "report/charts/sales_by_year_pwest.vg.json" %};
         vegaEmbed('#sales-by-year-pwest', spec);
     </script>
-
     <p class="lead col-sm-9">
         Prices leapt in 2014 and have gradually climbed since.
     </p>
@@ -228,6 +243,31 @@
             </tbody>
         </table>
     </div>
+</section>
+
+<section class="row">
+    <h3 class="col-sm-12">Downtown trends</h3>
+    <p class="lead col-sm-12">
+        The long-term patterns across the neighborhood.
+    </p>
+    <div id="sales-by-year-dtla"></div>
+    <script>
+        var spec = {% include "report/charts/sales_by_year_dtla.vg.json" %};
+        vegaEmbed('#sales-by-year-dtla', spec);
+    </script>
+    <p class="lead col-sm-9">
+        Prices have consistently grown for years, but the increases have recently started to slow.
+    </p>
+    <div id="median-price-by-year-dtla"></div>
+    <script>
+        var spec = {% include "report/charts/median_price_by_year_dtla.vg.json" %};
+        vegaEmbed('#median-price-by-year-dtla', spec);
+    </script>
+    <div id="median-price-per-sqft-by-year-dtla"></div>
+    <script>
+        var spec = {% include "report/charts/median_price_per_sqft_by_year_dtla.vg.json" %};
+        vegaEmbed('#median-price-per-sqft-by-year-dtla', spec);
+    </script>
 </section>
 
 {% comment %}

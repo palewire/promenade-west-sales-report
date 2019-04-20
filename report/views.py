@@ -16,7 +16,7 @@ class IndexView(TemplateView):
     template_name = "report/index.html"
 
     def get_context_data(self):
-        everything = Sale.objects.select_related("building").all()
+        everything = Sale.objects.select_related("building").filter(date__year__gt=2010)
         everything_pwest = everything.filter(building__name='Promenade West')
 
         the_last_year = Sale.objects.select_related("building").the_last_year()
